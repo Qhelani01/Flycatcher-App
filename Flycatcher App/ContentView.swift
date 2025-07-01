@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @StateObject private var viewModel = ObservationViewModel()
 
-#Preview {
-    ContentView()
+    var body: some View {
+        NavigationView {
+            List(viewModel.observations) { observation in
+                VStack(alignment: .leading) {
+                    Text(observation.comName)
+                        .font(.headline)
+                    Text(observation.locName)
+                        .font(.subheadline)
+                    Text("Observed on \(observation.obsDt)")
+                        .font(.caption)
+                }
+            }
+            .navigationTitle("Bird Observations")
+            .onAppear {
+                viewModel.fetchObservations()
+            }
+        }
+    }
 }
