@@ -1,0 +1,17 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+
+# Swift Package Manager
+Packages/
+.swiftpm/
+.build/
+
+# Personal
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Secrets
+Secrets.plist
