@@ -1,3 +1,9 @@
+## Flycatcher App
+
+Flycatcher App is an iOS app that uses SwiftUI to fetch real-time bird observation data from the eBird API and displays it:
+- 📜 In a List view (Bird Observations)
+- 🗺️ On a Map view (Pins on a map for each observation)
+
 ## Video Walkthrough
 
 <div>
