@@ -1,4 +1,4 @@
-Video Walkthrough:
+## Video Walkthrough
 
 <div>
     <a href="https://www.loom.com/share/ef7639f4960b4258a55d9ee89b981bb7">
